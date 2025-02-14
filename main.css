@@ -4,17 +4,23 @@
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap');
 
 :root {
   --amarelo-espanha: #eda501;
   --amarelo-espanha-claro: #fed76a;
   --marrom-espanha: #733e01;
   --cinza-espanha: #d6d8dd;
-  --vermelho-espanha: #6a1410;
+  --vermelho-espanha: #ab1d1d;
   --vermelho-espanha-claro: #f7b1a1;
   --vermelho-espanha-teste: #bd3c2e;
+}
+
+h1 {
+  font-family: "Smooch Sans", serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: normal;
 }
 
 header {
@@ -22,8 +28,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 150px 0 150px;
-  background-color: var(--amarelo-espanha-claro);
+  padding: 20px 10% 20px 10%;
+  background-color: var(--amarelo-espanha);
 }
 
 header div {
@@ -31,10 +37,11 @@ header div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 header div img {
-  width: 80px;
+  width: 75px;
 }
 
 .menu {
@@ -45,5 +52,20 @@ header div img {
   text-align: center;
   width: 100%;
   list-style: none;
-  gap: 20px;
+  gap: 50px;
+  font-family: "smooch sans", serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--vermelho-espanha);
+}
+
+.sobre {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 50px;
 }
