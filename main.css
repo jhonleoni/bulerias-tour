@@ -16,11 +16,16 @@
   --vermelho-espanha-teste: #bd3c2e;
 }
 
-h1 {
+.titulos {
   font-family: "Smooch Sans", serif;
-  font-size: 2.5em;
+  font-size: 2.6em;
   font-weight: 800;
   font-style: normal;
+}
+
+h3 {
+  font-family: "Smooch Sans", serif;
+  font-size: 22px;
 }
 
 header {
@@ -60,14 +65,14 @@ header div img {
 
 .menu a {
   text-decoration: none;
-  color: var(--vermelho-espanha);
+  color: black;
 }
 
 .sobre {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 5% 10%;
+  padding: 6% 10%;
 }
 
 .texto {
@@ -95,12 +100,26 @@ header div img {
 }
 
 .destinos {
+  padding: 35px;
+  background-color: var(--amarelo-espanha-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinos h2 {
+  font-size: 3em;
+  font-weight: 800;
+  font-family: "smooch sans", serif;
+}
+
+.destinos-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: var(--amarelo-espanha-claro);
+  padding-top: 40px;
 }
 
 .destino {
@@ -121,4 +140,24 @@ header div img {
 
 .destino p {
   padding: 0 10px;
+}
+
+.botao-visita {
+  padding: 8px 14px;
+  background-color: var(--vermelho-espanha);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "open sans", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--vermelho-espanha-claro);
 }
