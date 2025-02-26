@@ -73,6 +73,7 @@ header div img {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 6% 10%;
+  gap: 20px;
 }
 
 .texto {
@@ -160,4 +161,88 @@ header div img {
   align-items: center;
   justify-content: center;
   background-color: var(--vermelho-espanha-claro);
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .sobre {
+    padding-top: 70px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .texto {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-img img {
+    width: 100%;
+  }
+
+  .destinos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .destino {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .sobre {
+    padding-top: 70px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .texto {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-img img {
+    width: 100%;
+  }
+
+  .destinos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .destino {
+    width: 50%;
+    padding: 20px;
+  }
 }
