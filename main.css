@@ -109,10 +109,26 @@ header div img {
   align-items: center;
 }
 
+.destinos img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 .destinos h2 {
   font-size: 3em;
   font-weight: 800;
   font-family: "smooch sans", serif;
+}
+
+.cards-destinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
 }
 
 .destinos-container {
