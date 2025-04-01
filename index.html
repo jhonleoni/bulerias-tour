@@ -19,27 +19,45 @@
       </div>
         <nav>
             <ul class="menu">
-                <li><a href="#nosotros">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destinos">Destinos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section class="sobre">
-      <div class="texto">
-        <h2>Sobre nós</h2>
-        <p>Somos uma agência de turismo brasileira em Sevilha, Espanha. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore magnam at perferendis saepe? Consequuntur quaerat dicta aperiam, ut hic sint voluptates est? Nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eveniet eius natus nostrum alias repudiandae cumque aspernatur quibusdam a quas quos. Maxime cum magnam sunt quis maiores repellendus repudiandae? Ipsum quam saepe tempora corporis reiciendis ea quasi, eveniet unde! Eius harum sunt earum!
-        </p>
+    <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div data-bs-interval="2500" class="carousel-item active">
+          <img class="d-block w-100" src="./assets/pexels-juany-jimenez-torres-962962-2102605.jpg" />
+        </div>
+        <div data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="./assets/pexels-axp-photography-500641970-16681097.jpg" />
+        </div>
+        <div data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="./assets/pexels-dronpedro-17743327.jpg" />
+        </div>
+        <div data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="./assets/Malaga-shutterstock_569945386-klein.jpg" />
+        </div>
       </div>
-      <div class="sobre-img">
-        <img src="./assets/sobre.png" alt="imagem de um tour guiado por nós">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
       </div>
-    </section>
-    <section class="destinos">
+    </div>
+    <section id="destinos" class="destinos">
       <h2 class="titulos">Destinos</h2>
       <div class="container cards-destinos">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card">
               <img src="./assets/Malaga-shutterstock_569945386-klein.jpg"/>
               <div class="card-body">
@@ -51,7 +69,7 @@
               </div>
             </div>
             </div>
-              <div class="col-4">
+              <div class="col-lg-3 col-md-6 col-12">
                 <div class="card">
                   <img src="./assets/alcazar-Seville.jpg" />
                   <div class="card-body">
@@ -63,7 +81,7 @@
                   </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-3 col-md-6 col-12">
               <div class="card">
                 <img src="./assets/destino4.png" />
                 <div class="card-body">
@@ -75,30 +93,38 @@
                 </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+              <img src="./assets/pexels-juan-luis-seco-1235220579-22798478.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Casa de Flores</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    qui exercitationem in, aliquam architecto repudiandae obcaecati possimus et 
+                  dolorem porro magnam non!</p>
+                  <a href="#" class="botao-visita">Agendar Visita</a>
+              </div>
           </div>
         </div>
       </div>
       <div>
       </div>
-      <div class="destinos-container">
-        <div class="destino">
-          <img src="./assets/destino1.png" alt="destino 1">
-          <h3>Santa Cruz de Sevilla</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-          <button class="botao-visita">Agendar Visita</button>
-        </div>
-        <div class="destino">
-          <img src="./assets/destino2.png" alt="destino 2">
-          <h3>Afonso XIII en Sevilla</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-          <button class="botao-visita">Agendar Visita</button>
-        </div>
-        <div class="destino">
-          <img src="./assets/destino3.png" alt="destino 3">
-          <h3>La Catedral de Sevilla</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-          <button class="botao-visita">Agendar Visita</button>
-        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="texto">
+        <h2>Sobre nós</h2>
+        <p>Somos uma agência de turismo brasileira em Sevilha, Espanha. Lorem ipsum dolor 
+          sit amet, consectetur adipisicing elit. Dolore magnam at perferendis saepe? 
+          Consequuntur quaerat dicta aperiam, ut hic sint voluptates est? Nobis. Lorem
+           ipsum dolor sit amet consectetur adipisicing elit. Modi, eveniet eius natus
+            nostrum alias repudiandae cumque aspernatur quibusdam a quas quos. Maxime 
+            cum magnam sunt quis maiores repellendus repudiandae? Ipsum quam saepe tempora
+             corporis reiciendis ea quasi, eveniet unde! Eius harum sunt earum!
+        </p>
+      </div>
+      <div class="sobre-img">
+        <img src="./assets/sobre.png" alt="imagem de um tour guiado por nós">
+      </div>
     </section>
 
     <section id="contato" class="formulario">

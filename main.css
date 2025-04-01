@@ -68,12 +68,19 @@ header div img {
   color: black;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
 .sobre {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 6% 10%;
   gap: 20px;
+  background-color: var(--amarelo-espanha-claro);
 }
 
 .texto {
@@ -86,7 +93,7 @@ header div img {
 }
 
 .texto h2 {
-  font-size: 2em;
+  font-size: 3.5em;
   font-weight: 800;
   font-family: "smooch sans", serif;
 }
@@ -111,7 +118,6 @@ header div img {
 
 .destinos {
   padding: 35px;
-  background-color: var(--amarelo-espanha-claro);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,33 +146,6 @@ header div img {
   align-items: center;
   gap: 20px;
   padding: 40px 0 60px 0;
-}
-
-.destinos-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40px;
-}
-
-.destino {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.destino img {
-  width: 90%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.destino p {
-  padding: 0 10px;
 }
 
 .botao-visita {
