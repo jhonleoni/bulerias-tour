@@ -100,6 +100,15 @@ header div img {
   border-radius: 8px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .destinos {
   padding: 35px;
   background-color: var(--amarelo-espanha-claro);
@@ -110,16 +119,18 @@ header div img {
 }
 
 .destinos img {
-  width: 400px;
-  height: 350px;
+  max-width: 95%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 4px;
+  margin-top: 7px;
 }
 
 .destinos h2 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 800;
   font-family: "smooch sans", serif;
+  padding-top: 20px;
 }
 
 .cards-destinos {
@@ -128,7 +139,7 @@ header div img {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-top: 40px;
+  padding: 40px 0 60px 0;
 }
 
 .destinos-container {
@@ -149,8 +160,7 @@ header div img {
 }
 
 .destino img {
-  width: 300px;
-  height: 300px;
+  width: 90%;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -169,6 +179,7 @@ header div img {
   font-weight: 700;
   font-size: 1em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .formulario {
